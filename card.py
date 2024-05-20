@@ -22,8 +22,16 @@ class Rank(Enum):
     ACE = ('A', 11)
 
     def __init__(self, face, value):
-        self.face = face
-        self.value = value
+        self._face = face
+        self._value = value
+
+    @property
+    def face(self):
+        return self._face
+
+    @property
+    def value(self):
+        return self._value
 
 class Card:
     'common base class for Cards'
@@ -33,10 +41,10 @@ class Card:
         self.rank = rank
 
     def getCardValue(self):
-        return self.value
-    
+        return self.rank.value
+
     def is_Ace(self):
         return self.rank == Rank.ACE
-    
+
     def __str__(self):
         return f"{self.rank.face} of {self.suit.value}"
