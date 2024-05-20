@@ -21,14 +21,22 @@ class Rank(Enum):
     KING = ('K', 10)
     ACE = ('A', 11)
 
+    def __init__(self, face, value):
+        self.face = face
+        self.value = value
+
 class Card:
     'common base class for Cards'
 
-    def __init__(self, suit, face, value, is_ace):
+    def __init__(self, suit: Suit, rank: Rank):
         self.suit = suit
-        self.face = face
-        self.value = value
-        self.is_ace = is_ace
+        self.rank = rank
 
     def getCardValue(self):
         return self.value
+    
+    def is_Ace(self):
+        return self.rank == Rank.ACE
+    
+    def __str__(self):
+        return f"{self.rank.face} of {self.suit.value}"
