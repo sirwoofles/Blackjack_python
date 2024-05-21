@@ -133,10 +133,10 @@ class Game:
 
     def play_game(self):
             while self.player.stack > 0:
-                time.sleep(5)
+                time.sleep(3)
                 self.play_round()
                 self.reset_round()
-                time.sleep(5)
+                time.sleep(3)
 
             print("Game over. Thank you for playing!")
 
