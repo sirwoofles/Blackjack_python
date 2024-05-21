@@ -1,10 +1,13 @@
 # Black Jack python
 
-**Summary**
-This is a Casino-Style Blackjack Game written in python
+## Summary
+This is a Casino-Style Blackjack Game written in Python. The purpose of this project is to serve multiple goals, including learning Python, creating a game I enjoy, practicing blackjack counting skills, and ultimately developing a web version with a user interface.
 
-The purpose of this project has been to learn python and 
-documentation of python code.
+## Project Goals
+1. **Learn Python**: Enhance my Python programming skills by building a complete project from scratch.
+2. **Create a Fun Game**: Develop a Casino-Style Blackjack game that I enjoy playing.
+3. **Blackjack Counting Skills**: Improve my blackjack counting skills by implementing and practicing various counting techniques within the game.
+4. **Web Version with UI**: Transition the game from a command-line interface to a web-based application with an intuitive user interface.
 
 It is still work in progress with some missing functions and a few bugs.
 
