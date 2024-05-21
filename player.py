@@ -10,6 +10,7 @@
 """
 
 from hand import Hand
+from card import Card
 
 class Player(Hand):
     def __init__(self, name:str, stack: int):

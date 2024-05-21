@@ -5,7 +5,6 @@
     methods
     1. hit, stand, double, buy insurance 
     2. shows 2 cards
-
 """
 
 from hand import Hand
