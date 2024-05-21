@@ -26,6 +26,10 @@ class Player(Hand):
         self.bet = amount
         self.stack -= amount
 
+    def blackjack_win(self):
+        self.stack += 2.5*self.bet
+        self.bet = 0
+        
     def win_bet(self):
         self.stack += 2*self.bet
         self.bet = 0
@@ -40,9 +44,11 @@ class Player(Hand):
     def double_bet(self):
         if self.bet > self.stack:
             raise ValueError("Not enough stack to double bet")
-        self.bet *= 2
         self.stack -= self.bet
+        self.bet *= 2
 
+    # Yet to implemenet insurance feature
+    """
     def buy_insurance(self):
         insurance_cost = 0.5 * self.bet
         if insurance_cost > self.stack:
@@ -56,7 +62,8 @@ class Player(Hand):
     def win_insurance(self):
         self.push_bet(self)
         self.has_insurance = 0
-
+    """
+    
     def hit(self, card:Card):
         self.add_card(card)
 
