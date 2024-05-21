@@ -40,8 +40,8 @@ If you would like to contribute to this project, please fork the repository and 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-
-## Rules of Black Jack can be found [here](https://www.venetianlasvegas.com/casino/table-games/how-to-play-blackjack.html#:~:text=In%20Blackjack%2C%20everyone%20plays%20against,and%20the%20wager%20is%20lost) 
+## Rules of Black Jack 
+The rules can be found [here](https://www.venetianlasvegas.com/casino/table-games/how-to-play-blackjack.html#:~:text=In%20Blackjack%2C%20everyone%20plays%20against,and%20the%20wager%20is%20lost) 
 
 **Current Player Features/Move Sets:**
 1. Stand
