@@ -1,4 +1,4 @@
-# game.py
+# blackjack.py
 
 from shoe import Shoe
 from player import Player
