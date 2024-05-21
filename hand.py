@@ -6,8 +6,9 @@
     1. Draw card
     2. get value
         a. if ace?
-    3. clear Hand
-    4. print hand value
+    3. Show Hand
+    4. Clear Hand
+    5. Print hand value
 """
 
 from card import Card
@@ -21,6 +22,9 @@ class Hand:
 
     def clear_hand(self):
         self.cards.clear()
+
+    def show_hand(self):
+        return ', '.join(map(str, self.cards))
 
     def get_hand_value(self):
         hand_value = 0
