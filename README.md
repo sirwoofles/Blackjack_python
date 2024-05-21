@@ -11,7 +11,7 @@ This is a Casino-Style Blackjack Game written in Python. The purpose of this pro
 
 It is still work in progress with some missing functions and a few bugs.
 
-### Prerequisites before you can play
+## Prerequisites before you can play
 **Python3:** (my version is Python 3.9.6), More info about download can be 
 found [here](https://www.python.org/downloads/).   
   
@@ -27,21 +27,21 @@ are in the project root of *blackjack* and type:
 
 The game should now fire up. Please enjoy!
 
-### Documentation generation
+## Documentation generation
 Works in progress
 
-### Usage
+## Usage
 - Follow the on-screen prompts to play the game.
 - Place your bets, hit, stand, or double down as you try to beat the dealer.
 
-### Contributing
+## Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request. Contributions are welcome!
 
-### License
+## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
-### Rules of Black Jack can be found [here](https://www.venetianlasvegas.com/casino/table-games/how-to-play-blackjack.html#:~:text=In%20Blackjack%2C%20everyone%20plays%20against,and%20the%20wager%20is%20lost) 
+## Rules of Black Jack can be found [here](https://www.venetianlasvegas.com/casino/table-games/how-to-play-blackjack.html#:~:text=In%20Blackjack%2C%20everyone%20plays%20against,and%20the%20wager%20is%20lost) 
 
 **Current Player Features/Move Sets:**
 1. Stand
