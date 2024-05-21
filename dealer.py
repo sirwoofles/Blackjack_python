@@ -1,7 +1,6 @@
 """
-    Player Class
-    1. stack
-    2. hand
+    Dealer Class
+    1. hand
 
     methods
     1. hit, stand, double, buy insurance 
@@ -17,7 +16,6 @@ class Player(Hand):
         self.name = name
         self.stack = stack
         self.bet = 0
-        self.has_insurance = 0
 
     def place_bet(self, amount:int):
         if amount > self.stack:
@@ -37,33 +35,8 @@ class Player(Hand):
         self.bet = 0
 
     def double_bet(self):
-        if self.bet > self.stack:
-            raise ValueError("Not enough stack to double bet")
         self.bet *= 2
         self.stack -= self.bet
-
-    def buy_insurance(self):
-        insurance_cost = 0.5 * self.bet
-        if insurance_cost > self.stack:
-            raise ValueError("Not enough stack to buy insurance")
-        self.stack -= insurance_cost
-        self.has_insurance = 1
-
-    def lose_insurance(self):
-        self.has_insurance = 0
-    
-    def win_insurance(self):
-        self.push_bet(self)
-        self.has_insurance = 0
-
-    def hit(self, card:Card):
-        self.add_card(card)
-
-    def stand(self):
-        pass
-
-    def show_hand(self):
-        return f"{self.name}'s hand: {super().__str__()}"
 
     def __str__(self):
         return f"{self.name}'s hand: {super().__str__()} | Stack: {self.stack} | Bet: {self.bet}"
