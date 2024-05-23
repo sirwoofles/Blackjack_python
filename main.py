@@ -1,4 +1,4 @@
-# blackjack.py
+# main.py
 
 from shoe import Shoe
 from player import Player
@@ -105,7 +105,11 @@ class Game:
         self.clear_terminal()
         print(f"Player {self.player.name} has {self.player.stack} in the stack.")
 
-        bet_amount = int(input(f"Hello {self.player.name}! Please enter amount you wish to bet this round.\n"))
+        while True:
+            bet_amount = int(input(f"Hello {self.player.name}! Please enter amount you wish to bet this round.\n"))
+            if bet_amount <= self.player.stack:
+                break
+
         self.player.place_bet(bet_amount)
         print(f"{self.player.name} placed a bet of {self.player.bet}. Remaining Stack: {self.player.stack}")
 
