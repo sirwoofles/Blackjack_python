@@ -1,5 +1,7 @@
 # main.py
 
+import asyncio
+
 from shoe import Shoe
 from player import Player
 from dealer import Dealer
@@ -145,11 +147,14 @@ class Game:
             print("Game over. Thank you for playing!")
 
 
-def main():
+async def main():
     name = input("What's your name?: ")
     amount = int(input("How much is your starting stack of money: "))
     game = Game(player_name=name, initial_stack=amount)
     game.play_game()
+
+
+asyncio.run(main())
 
 if __name__ == "__main__":
     main()
